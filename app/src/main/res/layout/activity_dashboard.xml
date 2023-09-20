@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_sort_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/latihan_rectangle"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+
+        android:src="@drawable/zoro" />
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Sale!!"
+        android:textSize="24sp"
+        android:layout_below="@id/ibMenu"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#388E3C"/>
+    <TextView
+        android:id="@+id/diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:fontFamily="monospace"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/sale"
+        android:layout_marginStart="20dp"
+        android:textColor="#388E3C"/>
+
+    <TextView
+        android:id="@+id/limited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Limited Time"
+        android:textSize="20sp"
+        android:layout_below="@id/diskon"
+        android:layout_marginStart="20dp"
+        android:textColor="#9F9F9F"/>
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B1B0B0"
+        android:layout_below="@id/limited"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+        android:layout_below="@id/garis"/>
+
+
+    <TextView
+        android:id="@+id/tvNewArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Arrival"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="#B1B0B0"
+        android:layout_below="@id/garis"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="#B1B0B0"
+        android:layout_below="@id/garis"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/ivGambar2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/luffy"
+        android:background="@drawable/cart_image"
+        android:layout_below="@id/popular"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tvLuffy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luffy gear 2"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvNewArrival"
+        android:layout_toRightOf="@id/ivGambar2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/brandNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandai Namco"
+        android:textSize="16dp"
+        android:textColor="#B1B0B0"
+        android:layout_below="@id/tvLuffy"
+        android:layout_toRightOf="@id/ivGambar2"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$59,99"
+        android:textColor="#388E3C"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@id/brandNama"
+        android:layout_toRightOf="@id/ivGambar2"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivGambar3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/sanji"
+        android:background="@drawable/cart_image"
+        android:layout_below="@id/ivGambar2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tvSanji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sanji Raid Suit"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/ivGambar2"
+        android:layout_toRightOf="@id/ivGambar3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/tvBrand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandai Namco"
+        android:textSize="16dp"
+        android:textColor="#B1B0B0"
+        android:layout_below="@id/tvSanji"
+        android:layout_toRightOf="@id/ivGambar3"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/tvprice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$49,99"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+        android:layout_below="@id/tvBrand2"
+        android:layout_toRightOf="@id/ivGambar3"
+        android:layout_marginStart="20dp"/>
+</RelativeLayout>
