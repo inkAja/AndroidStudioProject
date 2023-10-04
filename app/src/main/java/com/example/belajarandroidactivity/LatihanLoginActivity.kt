@@ -30,6 +30,9 @@ class LatihanLoginActivity : AppCompatActivity() {
                 val intent= Intent(this, DashboardStoreActivity::class.java)
                 startActivity(intent)
                 tvAlert.visibility = View.GONE
+                finish()
+            } else if(inputUsername.text.toString().isEmpty() && inputPassword.text.toString().isEmpty()){
+                Toast.makeText(this, "username or password required",Toast.LENGTH_LONG).show()
             } else{
                 tvAlert.visibility = View.VISIBLE
                 var builder = AlertDialog.Builder(this)
