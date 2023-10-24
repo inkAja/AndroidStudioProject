@@ -22,8 +22,8 @@ class DoaHarianAdapter(val data:ArrayList<DoaHarian>): RecyclerView.Adapter
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoaHarianViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_doa_harian,parent,false)
-        return DoaHarianViewHolder(view)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_doa_harian,parent,false)
+            return DoaHarianViewHolder(view)
     }
 
     override fun getItemCount(): Int =data.size

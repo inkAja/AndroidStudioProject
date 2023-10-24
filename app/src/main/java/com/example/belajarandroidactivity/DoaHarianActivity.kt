@@ -23,9 +23,9 @@ class DoaHarianActivity : AppCompatActivity() {
                 "Bismikallohumma ahya wa amuutu")
         )
         val adapter = DoaHarianAdapter(DoaHarian)
-        val linearVertical = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
+        val linearHorizontal = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
 
         rvDoaHarian.adapter = adapter
-        rvDoaHarian.layoutManager = linearVertical
+        rvDoaHarian.layoutManager = linearHorizontal
     }
 }
